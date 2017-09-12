@@ -1,0 +1,49 @@
+{
+    "contacts": [
+      {
+        "id" : 1,
+        "name": "User1",
+        "img" : "public/assets/img/1.png",
+        "messages": [
+          {
+            "content":"Hello",
+            "time":"01:00PM"
+          },
+          {
+            "content":"Hi",
+            "time":"01:20PM"
+          }
+        ]
+      },
+      {
+        "id" : 2,
+        "name": "User2",
+        "img" : "public/assets/img/2.png",
+        "messages": [
+          {
+            "content":"Hello",
+            "time":"01:00PM"
+          },
+          {
+            "content":"Hi",
+            "time":"01:20PM"
+          }
+        ]
+      },
+      {
+        "id" : 3,
+        "name": "User3",
+        "img" : "public/assets/img/3.png",
+        "messages": [
+          {
+            "content":"Hello",
+            "time":"01:00PM"
+          },
+          {
+            "content":"Hi",
+            "time":"01:20PM"
+          }
+        ]
+      }
+    ]
+}

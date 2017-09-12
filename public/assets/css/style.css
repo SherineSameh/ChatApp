@@ -1,0 +1,26 @@
+.no-padding {
+  padding: 0px !important;
+}
+.top-left-rounding {
+  border-radius: 15px 0px 0px 0px;
+}
+.top-right-rounding {
+  border-radius: 0px 15px 0px 0px;
+}
+.main-container {
+  height: 80vh;
+  margin-top: 10vh;
+  border-radius: 15px;
+}
+.app-header {
+  border-radius: 15px 15px 0px 0px;
+}
+.app-body {
+  border-radius: 0px 0px 15px 15px;
+}
+.chat-body{
+  border-radius: 0px 0px 15px 0px;
+}
+.chat-navbar {
+  border-radius: 0px 0px 0px 15px;
+}
