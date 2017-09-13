@@ -6,7 +6,7 @@
   </ul>
   <ul id="recent-chats" class="no-margin collection nav-container scroll">
     <li class="active" ng-repeat="contact in contacts">
-      <a href="" ng-click="openChat(contact.id)" class="row collection-item contact no-padding">
+      <a href="#!" ng-click="openChat(contact.id)" class="row collection-item contact no-padding">
         <div class="col s12">
           <span class="time grey-text lighten-5">{{contact.messages[contact.messages.length -1].time}}</span>
         </div>
@@ -23,7 +23,7 @@
   </ul>
   <ul id="contacts" class="no-margin collection nav-container scroll">
     <li  ng-repeat="contact in contacts">
-      <a href="" ng-click="openChat(contact.id)" class="row collection-item contact">
+      <a href="#!" ng-click="openChat(contact.id)" class="row collection-item contact">
         <div class="col s4">
           <div class="online-badge hide-on-med-and-down" data-badge=""></div>
           <img ng-src="{{contact.img}}" alt="Profile Picture" class="circle responsive-img">

@@ -18,7 +18,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
           'navbar@home': {
               templateUrl: 'public/partials/_navbar.html'
           },
-          'chat-box@body': {
+          'chat-box@home': {
               templateUrl: 'public/partials/_chat-box.html'
           }
         }

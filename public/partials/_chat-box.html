@@ -1,0 +1,48 @@
+<div class="col m9 s12 no-padding grey lighten-3 chat-box scroll">
+  <div ng-repeat="message in currentChat.messages">
+    <!-- message.type =0 -> received msg / message.type =1 -> sent message -->
+    <div ng-switch="{{message.type}}">
+      <div ng-switch-when="0">
+        <div class="row">
+          <div class="talk-bubble tri-right round left-top" style="float: left;">
+            <div class="talktext">
+              <p>{{message.content}}</p>
+            </div>
+          </div>
+          <span class="grey-text lighten-5" style="font-size:80%;">{{message.time}}</span>
+        </div>
+        <br />
+      </div>
+      <div ng-switch-when="1">
+        <div class="row"  style="float: right;">
+          <span class="grey-text lighten-5" style="font-size:80%;">{{message.time}}</span>
+          <div class="talk-bubble tri-left round right-top">
+            <div class="talktext-right">
+              <p>{{message.content}}</p>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Send Form -->
+<div class="footer col m9 offset-m3 s12 bottom-right-rounding">
+  <form ng-submit="send(currentChat.id)" name="form" role="form" class="row">
+      <div class="file-field input-field col m1 s1">
+        <input type="file" ng-model="form.file">
+        <span><i id="attach-file" class="material-icons">attach_file</i></span>
+      </div>
+      <div class="input-field col l9 m8 s9">
+        <textarea id="message" ng-model="form.message" ng-required="true" placeholder="Type your message" class="materialize-textarea scroll">
+        </textarea>
+      </div>
+      <div class="input-field col m2 s1 hide-on-small-only">
+        <a type="submit" ng-disabled="form.$invalid" class="waves-effect waves-light btn">send</a>
+      </div>
+      <div class="input-field col s1 hide-on-med-and-up show-on-small">
+        <a type="submit" ng-disabled="form.$invalid" class="btn-floating waves-effect waves-light"><i class="material-icons">send</i></a>
+      </div>
+  </form>
+</div>
