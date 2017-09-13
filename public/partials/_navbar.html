@@ -1,6 +1,6 @@
 <div class="col m3 hide-on-small-only no-padding white chat-navbar">
   <ul id="tabs-swipe-demo" class="tabs tabs-fixed-width grey lighten-2" >
-    <li class="tab col s3"><a href="#recent-chats" class="active"><i class="material-icons">chat</i></a></li>
+    <li class="tab col s3"><a href="#recent-chats" class="active"><i class="material-icons" >chat</i></a></li>
     <li class="tab col s3"><a href="#contacts"><i class="material-icons">supervisor_account</i></a></li>
     <li class="tab col s3"><a href="#search"><i class="material-icons">search</i></a></li>
   </ul>
@@ -11,12 +11,19 @@
           <span class="time grey-text lighten-5">{{contact.messages[contact.messages.length -1].time}}</span>
         </div>
         <div class="col s3">
-          <div class="online-badge hide-on-med-and-down" data-badge=""></div>
+          <div ng-switch="{{contact.state}}">
+            <div ng-switch-when="busy">
+              <div class="busy-badge" data-badge=""></div>
+            </div>
+            <div ng-switch-default>
+              <div class="online-badge" data-badge=""></div>
+            </div>
+          </div>
           <img ng-src="{{contact.img}}" alt="" class="circle responsive-img">
         </div>
         <div class="col s9">
           <span class="title grey-text">{{contact.name}}</span><br />
-          <span class="last-msg grey-text">{{contact.messages[contact.messages.length -1].content}}</span><br />
+          <span class="last-msg grey-text truncate">{{contact.messages[contact.messages.length -1].content}}</span><br />
         </div>
       </a>
     </li>
@@ -38,7 +45,7 @@
     <li>
       <div class="nav-wrapper card">
           <div class="input-field">
-            <input id="search" class="title" placeholder="Search on anything" type="search" required ng-model="search">
+            <input id="search" class="title" placeholder="Search for anything" type="search" required ng-model="search">
           </div>
       </div>
     </li>

@@ -29,6 +29,9 @@
   border-radius: 15px 0px 0px 0px;
   height:8vh;
 }
+.top-left-rounding row {
+  margin-top: 20px !important;
+}
 .leftbar{
   width:20px !important;
 }
@@ -116,6 +119,25 @@
   border-radius: 50%;
 	box-shadow:0 0 1px #333;
 }
+
+.busy-badge {
+		position:relative;
+}
+.busy-badge[data-badge]:after {
+  content: attr(data-badge);
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  font-size: .7em;
+  background: #d91515;
+  color: white;
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+	box-shadow:0 0 1px #333;
+}
 .footer {
   position: absolute;
   right: 0;
@@ -153,7 +175,7 @@
 	border-radius: 50%;
 }
 .talk-bubble {
-	margin: 10px 30px 10px 30px;
+	margin: 0px 30px 0px 30px;
   /*margin: 10px;*/
   display: inline-block;
   position: relative;
@@ -228,6 +250,7 @@
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
   color: #fff;
+  text-align: left;
 }
 .talktext {
   padding: 1em;
@@ -240,6 +263,7 @@
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
   /*color: #fff;*/
+  text-align: left;
 }
 .tabs .tab a:hover {
   color: #fff !important;
@@ -258,4 +282,13 @@
   height: 2px;
   background-color: transparent;
   will-change: left, right;
+}
+.truncate {
+  width: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+li .material-icons {
+  margin-top: 10px !important;
 }
