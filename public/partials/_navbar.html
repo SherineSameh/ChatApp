@@ -1,0 +1,61 @@
+<div class="col m3 hide-on-small-only no-padding white chat-navbar">
+  <ul id="tabs-swipe-demo" class="tabs tabs-fixed-width grey lighten-2" >
+    <li class="tab col s3"><a href="#recent-chats" class="active"><i class="material-icons">chat</i></a></li>
+    <li class="tab col s3"><a href="#contacts"><i class="material-icons">supervisor_account</i></a></li>
+    <li class="tab col s3"><a href="#search"><i class="material-icons">search</i></a></li>
+  </ul>
+  <ul id="recent-chats" class="no-margin collection nav-container scroll">
+    <li class="active" ng-repeat="contact in contacts">
+      <a href="" ng-click="openChat(contact.id)" class="row collection-item contact no-padding">
+        <div class="col s12">
+          <span class="time grey-text lighten-5">{{contact.messages[contact.messages.length -1].time}}</span>
+        </div>
+        <div class="col s3">
+          <div class="online-badge hide-on-med-and-down" data-badge=""></div>
+          <img ng-src="{{contact.img}}" alt="" class="circle responsive-img">
+        </div>
+        <div class="col s9">
+          <span class="title grey-text">{{contact.name}}</span><br />
+          <span class="last-msg grey-text">{{contact.messages[contact.messages.length -1].content}}</span><br />
+        </div>
+      </a>
+    </li>
+  </ul>
+  <ul id="contacts" class="no-margin collection nav-container scroll">
+    <li  ng-repeat="contact in contacts">
+      <a href="" ng-click="openChat(contact.id)" class="row collection-item contact">
+        <div class="col s4">
+          <div class="online-badge hide-on-med-and-down" data-badge=""></div>
+          <img ng-src="{{contact.img}}" alt="Profile Picture" class="circle responsive-img">
+        </div>
+        <div class="col s8">
+          <span class="title grey-text">{{contact.name}}</span><br />
+        </div>
+      </a>
+    </li>
+  </ul>
+  <ul id="search" class="no-margin collection nav-container scroll">
+    <li>
+      <div class="nav-wrapper card">
+          <div class="input-field">
+            <input id="search" class="title" placeholder="Search on anything" type="search" required ng-model="search">
+          </div>
+      </div>
+    </li>
+    <li ng-repeat="contact in contacts | filter :search">
+      <a href="" ng-click="openChat(contact.id)" class="row collection-item contact no-padding">
+        <div class="col s12">
+          <span class="time grey-text lighten-5">{{contact.messages[contact.messages.length -1].time}}</span>
+        </div>
+        <div class="col s3">
+          <div class="online-badge hide-on-med-and-down" data-badge=""></div>
+          <img ng-src="{{contact.img}}" alt="" class="circle responsive-img">
+        </div>
+        <div class="col s9">
+          <span class="title grey-text">{{contact.name}}</span><br />
+          <span class="last-msg grey-text">{{contact.messages[contact.messages.length -1].content}}</span><br />
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>

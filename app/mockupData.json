@@ -1,46 +1,257 @@
+
 {
     "contacts": [
       {
         "id" : 1,
         "name": "User1",
-        "img" : "public/assets/img/1.png",
+        "img" : "public/assets/img/user.png",
         "messages": [
           {
-            "content":"Hello",
-            "time":"01:00PM"
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "type": 0,
+            "time": "01:00PM"
           },
           {
             "content":"Hi",
-            "time":"01:20PM"
+            "type": 1,
+            "time": "01:20PM"
           }
         ]
       },
       {
         "id" : 2,
         "name": "User2",
-        "img" : "public/assets/img/2.png",
+        "img" : "public/assets/img/user.png",
         "messages": [
           {
-            "content":"Hello",
-            "time":"01:00PM"
+            "content": "Hello",
+            "type": 1,
+            "time": "01:00PM"
           },
           {
-            "content":"Hi",
-            "time":"01:20PM"
+            "content": "Hi",
+            "type": 0,
+            "time": "02:00PM"
           }
         ]
       },
       {
         "id" : 3,
         "name": "User3",
-        "img" : "public/assets/img/3.png",
+        "img" : "public/assets/img/user.png",
         "messages": [
           {
-            "content":"Hello",
-            "time":"01:00PM"
+            "content": "Hello",
+            "type": 1,
+            "time": "01:00PM"
           },
           {
             "content":"Hi",
+            "type": 0,
+            "time":"01:20PM"
+          }
+        ]
+      },
+      {
+        "id" : 4,
+        "name": "User4",
+        "img" : "public/assets/img/user.png",
+        "messages": [
+          {
+            "content": "Hello",
+            "type": 1,
+            "time": "01:00PM"
+          },
+          {
+            "content":"Hi",
+            "type": 0,
+            "time":"01:20PM"
+          }
+        ]
+      },
+      {
+        "id" : 5,
+        "name": "User5",
+        "img" : "public/assets/img/user.png",
+        "messages": [
+          {
+            "content": "Hello",
+            "type": 1,
+            "time": "01:00PM"
+          },
+          {
+            "content":"Hi",
+            "type": 0,
+            "time":"01:20PM"
+          }
+        ]
+      },
+      {
+        "id" : 6,
+        "name": "User6",
+        "img" : "public/assets/img/user.png",
+        "messages": [
+          {
+            "content": "Hello",
+            "type": 1,
+            "time": "01:00PM"
+          },
+          {
+            "content":"Hi",
+            "type": 0,
+            "time":"01:20PM"
+          }
+        ]
+      },
+      {
+        "id" : 7,
+        "name": "User7",
+        "img" : "public/assets/img/user.png",
+        "messages": [
+          {
+            "content": "Hello",
+            "type": 1,
+            "time": "01:00PM"
+          },
+          {
+            "content":"Hi",
+            "type": 0,
+            "time":"01:20PM"
+          }
+        ]
+      },
+      {
+        "id" : 8,
+        "name": "User8",
+        "img" : "public/assets/img/user.png",
+        "messages": [
+          {
+            "content": "Hello",
+            "type": 1,
+            "time": "01:00PM"
+          },
+          {
+            "content":"Hi",
+            "type": 0,
+            "time":"01:20PM"
+          }
+        ]
+      },
+      {
+        "id" : 9,
+        "name": "User9",
+        "img" : "public/assets/img/user.png",
+        "messages": [
+          {
+            "content": "Hello",
+            "type": 1,
+            "time": "01:00PM"
+          },
+          {
+            "content":"Hi",
+            "type": 0,
+            "time":"01:20PM"
+          }
+        ]
+      },
+      {
+        "id" : 10,
+        "name": "User10",
+        "img" : "public/assets/img/user.png",
+        "messages": [
+          {
+            "content": "Hello",
+            "type": 1,
+            "time": "01:00PM"
+          },
+          {
+            "content":"Hi",
+            "type": 0,
+            "time":"01:20PM"
+          }
+        ]
+      },
+      {
+        "id" : 11,
+        "name": "User11",
+        "img" : "public/assets/img/user.png",
+        "messages": [
+          {
+            "content": "Hello",
+            "type": 1,
+            "time": "01:00PM"
+          },
+          {
+            "content":"Hi",
+            "type": 0,
+            "time":"01:20PM"
+          }
+        ]
+      },
+      {
+        "id" : 12,
+        "name": "User12",
+        "img" : "public/assets/img/user.png",
+        "messages": [
+          {
+            "content": "Hello",
+            "type": 1,
+            "time": "01:00PM"
+          },
+          {
+            "content":"Hi",
+            "type": 0,
+            "time":"01:20PM"
+          }
+        ]
+      },
+      {
+        "id" : 13,
+        "name": "User13",
+        "img" : "public/assets/img/user.png",
+        "messages": [
+          {
+            "content": "Hello",
+            "type": 1,
+            "time": "01:00PM"
+          },
+          {
+            "content":"Hi",
+            "type": 0,
+            "time":"01:20PM"
+          }
+        ]
+      },
+      {
+        "id" : 14,
+        "name": "User14",
+        "img" : "public/assets/img/user.png",
+        "messages": [
+          {
+            "content": "Hello",
+            "type": 1,
+            "time": "01:00PM"
+          },
+          {
+            "content":"Hi",
+            "type": 0,
+            "time":"01:20PM"
+          }
+        ]
+      },
+      {
+        "id" : 15,
+        "name": "User 15",
+        "img" : "public/assets/img/user.png",
+        "messages": [
+          {
+            "content": "Hello",
+            "type": 1,
+            "time": "01:00PM"
+          },
+          {
+            "content":"Hi",
+            "type": 0,
             "time":"01:20PM"
           }
         ]

@@ -19,8 +19,8 @@ Developed using:
 3. Open the project: http://www.localhost/ChatApp
 
 ## To-do List:
-1. Create a responsive static interface
-2. Create a mockup data file
+1. ~~Create a responsive static interface~~
+2. ~~Create a mockup data file~~
 3. Send messages dynamically to any specific user
 4. Re-order contact list based on Time
 5. Create a simple bot
