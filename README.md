@@ -16,22 +16,20 @@ Developed using:
     $ cd /opt/lampp/htdocs
     $ git clone https://github.com/SherineSameh/ChatApp.git
     ```
-3. Open the project: http://www.localhost/ChatApp
+3. Open the project: http://localhost/ChatApp
 
 ## To-do List:
 1. ~~Create a responsive static interface~~
 2. ~~Create a mockup data file~~
 3. ~~Send messages dynamically to any specific user~~
 4. Re-order contact list based on Time
+3. Send messages dynamically to any specific user
+4. ~~Re-order contact list based on sent messages~~
 5. Create a simple bot
 6. Chat with the bot
 7. Get notifications from bot
 8. Remove notification on click
 9. Add chat API  
-
-## pubnub keys:
-publish-key: "pub-c-05c73555-b217-4cc2-9274-5cef310ad429"
-subscribe-key: "sub-c-628312b6-9708-11e7-8732-668d06f5aa09"
 
 ## License:
 Licensed under [MIT License](https://github.com/SherineSameh/ChatApp/blob/master/LICENSE)
