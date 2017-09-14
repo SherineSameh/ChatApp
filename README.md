@@ -23,7 +23,7 @@ Developed using:
 2. ~~Create a mockup data file~~
 3. ~~Send messages dynamically to any specific user~~
 4. ~~Re-order contact list based on sent messages~~
-5. Get notifications
+5. ~~Get notifications~~
 6. Remove notification on click
 7. Create a simple chatbot
 
