@@ -16,7 +16,7 @@ Developed using:
     $ cd /opt/lampp/htdocs
     $ git clone https://github.com/SherineSameh/ChatApp.git
     ```
-3. Open the project: http://localhost/ChatApp
+3. Open the project: http://localhost/ChatApp **OR** Preview: http://sherinesameh.me/ChatApp
 
 ## To-do List:
 1. ~~Create a responsive static interface~~
