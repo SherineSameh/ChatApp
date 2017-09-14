@@ -117,7 +117,7 @@
   text-align: center;
   line-height: 18px;
   border-radius: 50%;
-	box-shadow:0 0 1px #333;
+	/*box-shadow:0 0 1px #333;*/
 }
 
 .busy-badge {
@@ -291,4 +291,13 @@
 }
 li .material-icons {
   margin-top: 10px !important;
+}
+.notification {
+  background: #d40b0b;
+  color: #ffffff !important;
+  width: 20px !important;
+  height: 20px !important;
+  text-align: center;
+  font-size: 80%;
+  font-weight: bold;
 }

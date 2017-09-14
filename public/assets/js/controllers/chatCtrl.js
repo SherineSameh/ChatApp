@@ -27,16 +27,17 @@ app.controller('chatCtrl', function($scope, $interval, $http) {
       };
       index = Math.floor(Math.random() * 14) + 1
       $scope.contacts[index].messages.push(receivedMessage);
+      $scope.contacts[index].notifications ++;
       console.log($scope.contacts[index]);
 
       for (var i = 0; i < $scope.contacts.length; i++) {
+        $scope.notification = false;
         if ($scope.contacts[i].messages.length != $scope.msgLength[i]
         && $scope.contacts[i].messages[$scope.contacts[i].messages.length -1].type != 1) {
           temp = $scope.contacts[i];
           if(i != 0) {
             $scope.contacts.splice(i, 1);
             $scope.contacts.unshift(temp);
-            $scope.notification = true;
           }
           $scope.msgLength[i] = $scope.contacts[i].messages.length;
         }
@@ -50,7 +51,9 @@ app.controller('chatCtrl', function($scope, $interval, $http) {
    				break;
    			}
    	 }
+     $scope.contacts[index].notifications = 0;
      $scope.currentChat = $scope.contacts[index];
+     $scope.currentChat.notifications = 0;
      $scope.currentIndex = element;
     }
     $scope.send = function(message) {
@@ -70,6 +73,6 @@ app.controller('chatCtrl', function($scope, $interval, $http) {
       // }
     };
     $scope.openChatbot = function() {
-      
+
     }
 });

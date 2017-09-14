@@ -21,9 +21,13 @@
           </div>
           <img ng-src="{{contact.img}}" alt="" class="circle responsive-img">
         </div>
-        <div class="col s9">
+        <div class="col s7">
           <span class="title grey-text">{{contact.name}}</span><br />
           <span class="last-msg grey-text truncate">{{contact.messages[contact.messages.length -1].content}}</span><br />
+        </div>
+        <div class="col s2">
+          &nbsp;
+          <span class="badge notification" ng-if="contact.notifications != 0 ">{{contact.notifications}}</span>
         </div>
       </a>
     </li>
