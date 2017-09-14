@@ -8,32 +8,27 @@ function sendRequest($http) {
   });
 }
 app.controller('chatCtrl', function($scope, $interval, $http) {
-      sendRequest($http).success(function(data) {
-        $scope.contacts = data.contacts;
-        data = data.contacts;
-        $scope.currentChat = $scope.contacts[0];
-      });
-        // $scope.currentIndex = 0;
-        // $scope.msgLength = [];
-        // for (var i = 0; i < $scope.contacts.length; i++) {
-        //   $scope.msgLength[i] = $scope.contacts[i].messages.length
-        // }
-      // $interval(function() {
-      //   sendRequest($http).success(function(data) {
-      //     $scope.contacts = data.contacts;
-      //     for (var i = 0; i < $scope.contacts.length; i++) {
-      //       if ($scope.contacts[i].messages.length !== $scope.msgLength[i]) {
-      //          index = $scope.contacts[i];
-      //          temp = $scope.contacts[index];
-      //          if(index > 0) {
-      //             $scope.contacts.splice(index, 1);
-      //             $scope.contacts.unshift(temp);
-      //             index = 0
-      //           }
-      //       }
-      //     }
-      //   }, 30000);
-      // });
+    sendRequest($http).success(function(data) {
+      $scope.contacts = data.contacts;
+      data = data.contacts;
+      $scope.currentChat = $scope.contacts[0];
+      $scope.currentIndex = 0;
+      $scope.msgLength = [];
+      for (var i = 0; i < $scope.contacts.length; i++) {
+        $scope.msgLength[i] = $scope.contacts[i].messages.length
+      }
+    });
+    $interval(function() {
+      currentTime = new Date();
+      receivedMessage = {
+        'content' : 'test notifications',
+        'type': 0,
+        'time': currentTime.getHours() + ':' + currentTime.getMinutes()
+      };
+      index = Math.floor(Math.random() * 14) + 1
+      $scope.contacts[index].messages.push(receivedMessage);
+      console.log($scope.contacts[index]);
+    }, 60000);
     $scope.openChat = function(element, id) {
      var index = -1;
      for( var i = 0; i < $scope.contacts.length; i++ ) {
@@ -45,7 +40,6 @@ app.controller('chatCtrl', function($scope, $interval, $http) {
      $scope.currentChat = $scope.contacts[index];
      $scope.currentIndex = element;
     }
-
     $scope.send = function(message) {
       currentTime = new Date();
       sentMessage = {

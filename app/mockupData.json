@@ -22,7 +22,13 @@
             "content":"how are you?",
             "type": 1,
             "time": "01:21"
+          },
+          {
+            "content":"how are you?",
+            "type": 0,
+            "time": "01:21"
           }
+
         ]
       },
       {
