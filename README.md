@@ -1,6 +1,6 @@
 # ChatApp
 ## Description:
-A dynamic interface for a web chat application with a simple notification mechanism and a reservation chat bot which can collect information from users like name, email and ask them about a prefered date and check if selected date available from the previously saved dates.
+A dynamic interface for a web chat application with a simple notification mechanism.
 
 Developed using:
 - [Angular JS](https://angularjs.org/)
@@ -24,7 +24,7 @@ Developed using:
 3. ~~Send messages dynamically to any specific user~~
 4. ~~Re-order contact list based on sent messages~~
 5. ~~Get notifications~~
-6. Remove notification on click
+6. ~~Remove notification on click~~
 7. Create a simple chatbot
 
 ## License:
