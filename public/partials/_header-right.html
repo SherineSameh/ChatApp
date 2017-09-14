@@ -14,6 +14,7 @@
         <a href="#!" ng-click="openChat($index, contact.id);" class="row collection-item contact no-padding">
           <img class="circle responsive-img" ng-src="{{contact.img}}" style="width:30px; height:30px;"/>
           <span class="title grey-text">{{contact.name}}</span>
+          <span class="badge notification" ng-if="contact.notifications != 0 ">{{contact.notifications}}</span>
         </a>
     </li>
 </ul>
