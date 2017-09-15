@@ -73,6 +73,5 @@ app.controller('chatCtrl', function($scope, $interval, $http) {
       // }
     };
     $scope.openChatbot = function() {
-
     }
 });
