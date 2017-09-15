@@ -7,11 +7,11 @@ Developed using:
 - [Materialize CSS](http://materializecss.com/about.html)
 
 ## Installation and Preview:
-1. Start Apache Server
+1. Start [Apache Server](https://httpd.apache.org/)
     ```bash
     $ sudo /opt/lampp/lampp start
     ```
-2. Clone [**the repo**](https://github.com/SherineSameh/ChatApp.git) at **/opt/lampp/htdocs**
+2. Clone the repo at **/opt/lampp/htdocs**
     ```bash
     $ cd /opt/lampp/htdocs
     $ git clone https://github.com/SherineSameh/ChatApp.git
@@ -28,4 +28,4 @@ Developed using:
 7. Create a simple chatbot
 
 ## License:
-Licensed under [MIT License](https://github.com/SherineSameh/ChatApp/blob/master/LICENSE)
+Licensed under [MIT License](https://github.com/SherineSameh/ChatApp/blob/master/LICENSE).
