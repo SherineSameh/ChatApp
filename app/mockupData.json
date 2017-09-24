@@ -1,301 +1,284 @@
-
 {
-    "contacts": [
-      {
-        "id" : 1,
-        "name": "User1",
-        "state": "online",
-        "img" : "public/assets/img/user.png",
-        "notifications": 0,
-        "messages": [
-          {
-            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "type": 0,
-            "time": "01:00"
-          },
-          {
-            "content":"Hello",
-            "type": 1,
-            "time": "01:20"
-          },
-          {
-            "content":"how are you?",
-            "type": 1,
-            "time": "01:21"
-          },
-          {
-            "content":"how are you?",
-            "type": 0,
-            "time": "01:21"
-          }
+  "contacts": [{
+      "id": 1,
+      "name": "User1",
+      "state": "online",
+      "img": "public/assets/img/user.png",
+      "notifications": 0,
+      "messages": [{
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "type": 0,
+          "time": "01:00"
+        },
+        {
+          "content": "Hello",
+          "type": 1,
+          "time": "01:20"
+        },
+        {
+          "content": "how are you?",
+          "type": 1,
+          "time": "01:21"
+        },
+        {
+          "content": "how are you?",
+          "type": 0,
+          "time": "01:21"
+        }
 
-        ]
-      },
-      {
-        "id" : 2,
-        "name": "User2",
-        "img" : "public/assets/img/user.png",
-        "notifications": 0,
-        "state": "busy",
-        "messages": [
-          {
-            "content": "Hello",
-            "type": 1,
-            "time": "01:00"
-          },
-          {
-            "content": "Hi",
-            "type": 0,
-            "time": "02:00"
-          }
-        ]
-      },
-      {
-        "id" : 3,
-        "name": "User3",
-        "img" : "public/assets/img/user.png",
-        "notifications": 0,
-        "state": "online",
-        "messages": [
-          {
-            "content": "Hello",
-            "type": 1,
-            "time": "01:00"
-          },
-          {
-            "content":"ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "type": 0,
-            "time":"01:20"
-          }
-        ]
-      },
-      {
-        "id" : 4,
-        "name": "User4",
-        "img" : "public/assets/img/user.png",
-        "notifications": 0,
-        "state": "online",
-        "messages": [
-          {
-            "content": "Hello",
-            "type": 1,
-            "time": "01:00"
-          },
-          {
-            "content":"Hi",
-            "type": 0,
-            "time":"01:20"
-          }
-        ]
-      },
-      {
-        "id" : 5,
-        "name": "User5",
-        "img" : "public/assets/img/user.png",
-        "notifications": 0,
-        "state": "busy",
-        "messages": [
-          {
-            "content": "Hello",
-            "type": 1,
-            "time": "01:00"
-          },
-          {
-            "content":"Hi",
-            "type": 0,
-            "time":"01:20"
-          }
-        ]
-      },
-      {
-        "id" : 6,
-        "name": "User6",
-        "img" : "public/assets/img/user.png",
-        "notifications": 0,
-        "state": "online",
-        "messages": [
-          {
-            "content": "Hello",
-            "type": 1,
-            "time": "01:00"
-          },
-          {
-            "content":"Hi",
-            "type": 0,
-            "time":"01:20"
-          }
-        ]
-      },
-      {
-        "id" : 7,
-        "name": "User7",
-        "img" : "public/assets/img/user.png",
-        "notifications": 0,
-        "state": "online",
-        "messages": [
-          {
-            "content": "Hello",
-            "type": 1,
-            "time": "01:00"
-          },
-          {
-            "content":"Hi",
-            "type": 0,
-            "time":"01:20"
-          }
-        ]
-      },
-      {
-        "id" : 8,
-        "name": "User8",
-        "img" : "public/assets/img/user.png",
-        "notifications": 0,
-        "state": "online",
-        "messages": [
-          {
-            "content": "Hello",
-            "type": 1,
-            "time": "01:00"
-          },
-          {
-            "content":"Hi",
-            "type": 0,
-            "time":"01:20"
-          }
-        ]
-      },
-      {
-        "id" : 9,
-        "name": "User9",
-        "img" : "public/assets/img/user.png",
-        "notifications": 0,
-        "state": "online",
-        "messages": [
-          {
-            "content": "Hello",
-            "type": 1,
-            "time": "01:00"
-          },
-          {
-            "content":"Hi",
-            "type": 0,
-            "time":"01:20"
-          }
-        ]
-      },
-      {
-        "id" : 10,
-        "name": "User10",
-        "img" : "public/assets/img/user.png",
-        "notifications": 0,
-        "state": "online",
-        "messages": [
-          {
-            "content": "Hello",
-            "type": 1,
-            "time": "01:00"
-          },
-          {
-            "content":"Hi",
-            "type": 0,
-            "time":"01:20"
-          }
-        ]
-      },
-      {
-        "id" : 11,
-        "name": "User11",
-        "img" : "public/assets/img/user.png",
-        "notifications": 0,
-        "state": "online",
-        "messages": [
-          {
-            "content": "Hello",
-            "type": 1,
-            "time": "01:00"
-          },
-          {
-            "content":"Hi",
-            "type": 0,
-            "time":"01:20"
-          }
-        ]
-      },
-      {
-        "id" : 12,
-        "name": "User12",
-        "img" : "public/assets/img/user.png",
-        "notifications": 0,
-        "state": "online",
-        "messages": [
-          {
-            "content": "Hello",
-            "type": 1,
-            "time": "01:00"
-          },
-          {
-            "content":"Hi",
-            "type": 0,
-            "time":"01:20"
-          }
-        ]
-      },
-      {
-        "id" : 13,
-        "name": "User13",
-        "img" : "public/assets/img/user.png",
-        "notifications": 0,
-        "state": "online",
-        "messages": [
-          {
-            "content": "Hello",
-            "type": 1,
-            "time": "01:00"
-          },
-          {
-            "content":"Hi",
-            "type": 0,
-            "time":"01:20"
-          }
-        ]
-      },
-      {
-        "id" : 14,
-        "name": "User14",
-        "img" : "public/assets/img/user.png",
-        "notifications": 0,
-        "state": "online",
-        "messages": [
-          {
-            "content": "Hello",
-            "type": 1,
-            "time": "01:00"
-          },
-          {
-            "content":"Hi",
-            "type": 0,
-            "time":"01:20"
-          }
-        ]
-      },
-      {
-        "id" : 15,
-        "name": "User 15",
-        "img" : "public/assets/img/user.png",
-        "notifications": 0,
-        "state": "online",
-        "messages": [
-          {
-            "content": "Hello",
-            "type": 1,
-            "time": "01:00"
-          },
-          {
-            "content":"Hi",
-            "type": 0,
-            "time":"01:20"
-          }
-        ]
-      }
-    ]
+      ]
+    },
+    {
+      "id": 2,
+      "name": "User2",
+      "img": "public/assets/img/user.png",
+      "notifications": 0,
+      "state": "busy",
+      "messages": [{
+          "content": "Hello",
+          "type": 1,
+          "time": "01:00"
+        },
+        {
+          "content": "Hi",
+          "type": 0,
+          "time": "02:00"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "User3",
+      "img": "public/assets/img/user.png",
+      "notifications": 0,
+      "state": "online",
+      "messages": [{
+          "content": "Hello",
+          "type": 1,
+          "time": "01:00"
+        },
+        {
+          "content": "ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "type": 0,
+          "time": "01:20"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "User4",
+      "img": "public/assets/img/user.png",
+      "notifications": 0,
+      "state": "online",
+      "messages": [{
+          "content": "Hello",
+          "type": 1,
+          "time": "01:00"
+        },
+        {
+          "content": "Hi",
+          "type": 0,
+          "time": "01:20"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "User5",
+      "img": "public/assets/img/user.png",
+      "notifications": 0,
+      "state": "busy",
+      "messages": [{
+          "content": "Hello",
+          "type": 1,
+          "time": "01:00"
+        },
+        {
+          "content": "Hi",
+          "type": 0,
+          "time": "01:20"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "User6",
+      "img": "public/assets/img/user.png",
+      "notifications": 0,
+      "state": "online",
+      "messages": [{
+          "content": "Hello",
+          "type": 1,
+          "time": "01:00"
+        },
+        {
+          "content": "Hi",
+          "type": 0,
+          "time": "01:20"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "User7",
+      "img": "public/assets/img/user.png",
+      "notifications": 0,
+      "state": "online",
+      "messages": [{
+          "content": "Hello",
+          "type": 1,
+          "time": "01:00"
+        },
+        {
+          "content": "Hi",
+          "type": 0,
+          "time": "01:20"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "User8",
+      "img": "public/assets/img/user.png",
+      "notifications": 0,
+      "state": "online",
+      "messages": [{
+          "content": "Hello",
+          "type": 1,
+          "time": "01:00"
+        },
+        {
+          "content": "Hi",
+          "type": 0,
+          "time": "01:20"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "User9",
+      "img": "public/assets/img/user.png",
+      "notifications": 0,
+      "state": "online",
+      "messages": [{
+          "content": "Hello",
+          "type": 1,
+          "time": "01:00"
+        },
+        {
+          "content": "Hi",
+          "type": 0,
+          "time": "01:20"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "User10",
+      "img": "public/assets/img/user.png",
+      "notifications": 0,
+      "state": "online",
+      "messages": [{
+          "content": "Hello",
+          "type": 1,
+          "time": "01:00"
+        },
+        {
+          "content": "Hi",
+          "type": 0,
+          "time": "01:20"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "User11",
+      "img": "public/assets/img/user.png",
+      "notifications": 0,
+      "state": "online",
+      "messages": [{
+          "content": "Hello",
+          "type": 1,
+          "time": "01:00"
+        },
+        {
+          "content": "Hi",
+          "type": 0,
+          "time": "01:20"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "User12",
+      "img": "public/assets/img/user.png",
+      "notifications": 0,
+      "state": "online",
+      "messages": [{
+          "content": "Hello",
+          "type": 1,
+          "time": "01:00"
+        },
+        {
+          "content": "Hi",
+          "type": 0,
+          "time": "01:20"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "User13",
+      "img": "public/assets/img/user.png",
+      "notifications": 0,
+      "state": "online",
+      "messages": [{
+          "content": "Hello",
+          "type": 1,
+          "time": "01:00"
+        },
+        {
+          "content": "Hi",
+          "type": 0,
+          "time": "01:20"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "User14",
+      "img": "public/assets/img/user.png",
+      "notifications": 0,
+      "state": "online",
+      "messages": [{
+          "content": "Hello",
+          "type": 1,
+          "time": "01:00"
+        },
+        {
+          "content": "Hi",
+          "type": 0,
+          "time": "01:20"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "User 15",
+      "img": "public/assets/img/user.png",
+      "notifications": 0,
+      "state": "online",
+      "messages": [{
+          "content": "Hello",
+          "type": 1,
+          "time": "01:00"
+        },
+        {
+          "content": "Hi",
+          "type": 0,
+          "time": "01:20"
+        }
+      ]
+    }
+  ]
 }

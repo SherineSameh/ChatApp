@@ -1,20 +1,20 @@
-<div class="col m9 s12 no-padding white top-right-rounding" ng-model="currentChat">
-  <img ng-src="{{currentChat.img}}" alt="Profile Picture" class="current-user circle responsive-img">
-  <span class="title grey-text">{{currentChat.name}}</span>
+<div class="col m9 s12 no-padding white top-right-rounding" ng-model="currentChat" style="position:relative;">
+  <img ng-src="{{currentChat.img}}" alt="Profile Picture" class="current-user circle responsive-img vertical-centered">
+  <span class="vertical-centered title grey-text" style="padding-left:8vh;">CHAT WITH {{currentChat.name}}</span>
   <a href="#!" data-activates="slide-out" class="button-collapse show-on-small hide-on-med-and-up grey-text">
     <i class="material-icons">menu</i>
   </a>
   <a href="#!"><i class="material-icons grey-text">settings</i></a>
 </div>
 <ul id="slide-out" class="side-nav">
-    <li class="teal white-text title">
-      <span><i class="material-icons">supervisor_account</i>Contacts</span>
-    </li>
-    <li ng-repeat="contact in contacts">
-        <a href="#!" ng-click="openChat($index, contact.id);" class="row collection-item contact no-padding">
-          <img class="circle responsive-img" ng-src="{{contact.img}}" style="width:30px; height:30px;"/>
-          <span class="title grey-text">{{contact.name}}</span>
-          <span class="badge notification" ng-if="contact.notifications != 0 ">{{contact.notifications}}</span>
-        </a>
-    </li>
+  <li class="teal white-text title">
+    <span><i class="material-icons">supervisor_account</i>Contacts</span>
+  </li>
+  <li ng-repeat="contact in contacts">
+    <a href="#!" ng-click="openChat($index, contact.id);" class="row collection-item contact no-padding">
+      <img class="circle responsive-img" ng-src="{{contact.img}}" style="width:30px; height:30px;"/>
+      <span class="title grey-text">{{contact.name}}</span>
+      <span class="badge notification" ng-if="contact.notifications != 0 ">{{contact.notifications}}</span>
+    </a>
+  </li>
 </ul>

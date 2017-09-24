@@ -8,14 +8,14 @@ Developed using:
 
 ## Installation and Preview:
 1. Start [Apache Server](https://httpd.apache.org/)
-    ```bash
-    $ sudo /opt/lampp/lampp start
-    ```
+  ```bash
+   $ sudo /opt/lampp/lampp start
+  ```
 2. Clone the repo at **/opt/lampp/htdocs**
-    ```bash
-    $ cd /opt/lampp/htdocs
-    $ git clone https://github.com/SherineSameh/ChatApp.git
-    ```
+  ```bash
+   $ cd /opt/lampp/htdocs
+   $ git clone https://github.com/SherineSameh/ChatApp.git
+  ```
 3. Open the project: http://localhost/ChatApp **OR** Preview: http://sherinesameh.me/ChatApp
 
 ## To-do List:
