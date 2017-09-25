@@ -13,7 +13,6 @@ app.controller('chatCtrl', function($scope, $interval, $http) {
     $scope.currentChat = $scope.contacts[0];
     $scope.currentIndex = 0;
   });
-
   $interval(function() {
     currentTime = new Date();
     receivedMessage = {
@@ -27,10 +26,22 @@ app.controller('chatCtrl', function($scope, $interval, $http) {
     if($scope.contacts[index] !== $scope.currentIndex) {
       temp = $scope.contacts[index];
       $scope.contacts.splice(index,1);
-      $scope.contacts.unshift(temp)
+      $scope.contacts.unshift(temp);
+      toastContent = $('<div class="row no-padding no-margin">\
+                          <div class="col s12">\
+                            <span class="time lighten-5">'+ temp.messages[temp.messages.length -1].time + '</span>\
+                          </div>\
+                          <div class="col s3">\
+                            <img src="'+ temp.img + '" alt="" class="circle" style="width:7vh;">\
+                          </div>\
+                          <div class="col s9">\
+                            <span class="title">'+ temp.name + '</span><br />\
+                            <span class="last-msg truncate">'+ temp.messages[temp.messages.length -1].content + '</span><br />\
+                          </div>\
+                        </div>');
+      Materialize.toast(toastContent, 10000);
     }
   }, 30000);
-
   $scope.openChat = function(element, id) {
     var index = -1;
     for (var i = 0; i < $scope.contacts.length; i++) {
@@ -44,7 +55,6 @@ app.controller('chatCtrl', function($scope, $interval, $http) {
     $scope.currentChat.notifications = 0;
     $scope.currentIndex = element;
   }
-
   $scope.send = function(message) {
     currentTime = new Date();
     sentMessage = {
@@ -60,6 +70,5 @@ app.controller('chatCtrl', function($scope, $interval, $http) {
       $scope.currentIndex = 0;
     }
   }
-
   $scope.openChatbot = function() {};
 });

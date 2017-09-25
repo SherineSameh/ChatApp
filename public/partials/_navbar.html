@@ -19,7 +19,7 @@
               <div class="online-badge" data-badge=""></div>
             </div>
           </div>
-          <img ng-src="{{contact.img}}" alt="" class="circle responsive-img">
+          <img ng-src="{{contact.img}}" alt="" class="circle" style="width:7vh;">
         </div>
         <div class="col s7">
           <span class="title grey-text">{{contact.name}}</span><br />
@@ -37,7 +37,7 @@
       <a href="#!" ng-click="openChat($parent.$index, contact.id)" class="row collection-item contact">
         <div class="col s4">
           <div class="online-badge hide-on-med-and-down" data-badge=""></div>
-          <img ng-src="{{contact.img}}" alt="Profile Picture" class="circle responsive-img">
+          <img ng-src="{{contact.img}}" alt="Profile Picture" class="circle" style="width:7vh;">
         </div>
         <div class="col s8">
           <span class="title grey-text">{{contact.name}}</span><br />
@@ -49,7 +49,6 @@
     <form class="row">
       <div class="input-field col s11">
         <input id="search" placeholder="search for anything" class="materialize-textarea" ng-model="search" />
-        <!-- <i class="material-icons">search</i> -->
       </div>
     </form>
 
@@ -61,7 +60,7 @@
           </div>
           <div class="col s3">
             <div class="online-badge hide-on-med-and-down" data-badge=""></div>
-            <img ng-src="{{contact.img}}" alt="" class="circle responsive-img">
+            <img ng-src="{{contact.img}}" alt="" class="circle" style="width:7vh;">
           </div>
           <div class="col s9">
             <span class="title grey-text">{{contact.name}}</span><br />

@@ -3307,11 +3307,12 @@ input[type=range] + .thumb {
 }
 
 span.badge {
-  min-width: 3rem;
-  padding: 0 6px;
-  margin-left: 14px;
+  /*min-width: 3rem;*/
+  /*padding: 0 6px;*/
+  /*margin-left: 14px;*/
+  border-radius: 50%;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 22px;
   height: 22px;
   color: #757575;
@@ -4938,25 +4939,25 @@ small {
 
 @media only screen and (min-width: 993px) {
   #toast-container {
-    top: 10%;
-    right: 7%;
+    top: 3%;
+    right: 3%;
     max-width: 86%;
   }
 }
 
 .toast {
   border-radius: 2px;
-  top: 35px;
+  top: 5px;
   width: auto;
-  margin-top: 10px;
+  /*margin-top: 10px;*/
   position: relative;
   max-width: 100%;
   height: auto;
-  min-height: 48px;
+  min-height: 45px;
   line-height: 1.5em;
   word-break: break-all;
-  background-color: #323232;
-  padding: 10px 25px;
+  background-color: #32b9ac;
+  /*padding: 10px 25px;*/
   font-size: 1.1rem;
   font-weight: 300;
   color: #fff;
