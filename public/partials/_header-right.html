@@ -10,10 +10,10 @@
   <li class="teal white-text title">
     <span><i class="material-icons">supervisor_account</i>Contacts</span>
   </li>
-  <li ng-repeat="contact in contacts">
-    <a href="#!" ng-click="openChat($index, contact.id);" class="row collection-item contact no-padding">
-      <img class="circle responsive-img" ng-src="{{contact.img}}" style="width:30px; height:30px;"/>
-      <span class="title grey-text">{{contact.name}}</span>
+  <li ng-repeat="contact in contacts" style="position:relative;">
+    <a href="#!" ng-click="openChat($index, contact.id);" class="row contact no-padding" style="position:relative !important;">
+      <img class="circle vertical-centered" ng-src="{{contact.img}}" style="width:7vh;"/>
+      <span class="title grey-text" style="padding-left:9vh;">{{contact.name}}</span>
       <span class="badge notification" ng-if="contact.notifications != 0 ">{{contact.notifications}}</span>
     </a>
   </li>

@@ -11,14 +11,8 @@
           <span class="time grey-text lighten-5">{{contact.messages[contact.messages.length -1].time}}</span>
         </div>
         <div class="col s3">
-          <div ng-switch="{{contact.state}}">
-            <div ng-switch-when="busy">
-              <div class="busy-badge" data-badge=""></div>
-            </div>
-            <div ng-switch-default>
-              <div class="online-badge" data-badge=""></div>
-            </div>
-          </div>
+          <div ng-if="contact.state === 1" class="busy-badge" data-badge=""></div>
+          <div ng-if="contact.state === 0" class="online-badge" data-badge=""></div>
           <img ng-src="{{contact.img}}" alt="" class="circle" style="width:7vh;">
         </div>
         <div class="col s7">
@@ -36,7 +30,8 @@
     <li ng-repeat="contact in contacts">
       <a href="#!" ng-click="openChat($parent.$index, contact.id)" class="row collection-item contact">
         <div class="col s4">
-          <div class="online-badge hide-on-med-and-down" data-badge=""></div>
+          <div ng-if="contact.state === 1" class="busy-badge" data-badge=""></div>
+          <div ng-if="contact.state === 0" class="online-badge" data-badge=""></div>
           <img ng-src="{{contact.img}}" alt="Profile Picture" class="circle" style="width:7vh;">
         </div>
         <div class="col s8">
@@ -59,7 +54,8 @@
             <span class="time grey-text lighten-5">{{contact.messages[contact.messages.length -1].time}}</span>
           </div>
           <div class="col s3">
-            <div class="online-badge hide-on-med-and-down" data-badge=""></div>
+            <div ng-if="contact.state === 1" class="busy-badge" data-badge=""></div>
+            <div ng-if="contact.state === 0" class="online-badge" data-badge=""></div>
             <img ng-src="{{contact.img}}" alt="" class="circle" style="width:7vh;">
           </div>
           <div class="col s9">
