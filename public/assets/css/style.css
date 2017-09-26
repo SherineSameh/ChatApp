@@ -31,7 +31,7 @@
 
 .float-right {
   float: right !important;
-  clear: left; 
+  clear: left;
 }
 
 .top-left-rounding {
@@ -83,7 +83,7 @@
     margin-top: 0vh;
     border-radius: 0px;
   }
-  .chat-box {
+  #chat-box {
     border-radius: 0px !important;
     height: 88vh !important;
   }
@@ -94,7 +94,7 @@
   background-color: #eee;
 }
 
-.chat-box {
+#chat-box {
   border-radius: 0px 0px 10px 0px;
   height: 61vh;
   overflow-y: auto;
@@ -262,7 +262,7 @@
   right: auto;
   top: -8px;
   bottom: auto;
-  border: 32px solid;
+  border: 15px solid;
   border-color: #666 transparent transparent transparent;
 }
 
@@ -288,7 +288,7 @@
   left: auto;
   top: -8px;
   bottom: auto;
-  border: 32px solid;
+  border: 15px solid;
   /*background-color: #32b9ac;*/
   border-color: #32b9ac transparent transparent transparent;
 }

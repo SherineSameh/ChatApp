@@ -68,6 +68,9 @@ app.controller('chatCtrl', function($scope, $interval, $http) {
       $scope.contacts.unshift(temp);
       $scope.currentIndex = 0;
     }
+    chatbox    = $('#chat-box');
+    height = chatbox[0].scrollHeight;
+    chatbox.scrollTop(height);
   }
   $scope.openChatbot = function() {};
 });
