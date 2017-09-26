@@ -29,6 +29,11 @@
   margin: 0px !important;
 }
 
+.float-right {
+  float: right !important;
+  clear: left; 
+}
+
 .top-left-rounding {
   border-radius: 10px 0px 0px 0px;
   height: 8vh;
@@ -46,12 +51,6 @@
 .top-right-rounding {
   border-radius: 0px 10px 0px 0px;
   height: inherit;
-}
-
-.top-right-rounding .title {
-  /*padding: 2vh 0;*/
-  /*position: absolute;*/
-  /*margin-left: 15px;*/
 }
 
 .top-right-rounding a {
@@ -72,23 +71,24 @@
 
 .main-container {
   height: 80vh;
-  margin-top: 10vh;
+  margin-top: 15vh;
   border-radius: 10px;
   position: relative;
 }
+
 @media only screen and (max-width: 600px) {
   .main-container {
-      height: 100%;
-      position: relative;
-      margin-top: 0vh;
-      border-radius: 0px;
-
+    height: 100%;
+    position: relative;
+    margin-top: 0vh;
+    border-radius: 0px;
   }
   .chat-box {
     border-radius: 0px !important;
     height: 88vh !important;
   }
 }
+
 .app-body {
   border-radius: 0px 0px 10px 10px;
   background-color: #eee;
@@ -248,9 +248,9 @@
 }
 
 .round {
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
 }
 
 .tri-right.border.left-top:before {
@@ -271,11 +271,11 @@
   position: absolute;
   width: 0;
   height: 0;
-  left: -20px;
+  left: -10px;
   right: auto;
   top: 0px;
   bottom: auto;
-  border: 22px solid;
+  border: 15px solid;
   border-color: white transparent transparent transparent;
 }
 
@@ -299,11 +299,11 @@
   position: absolute;
   width: 0;
   height: 0;
-  right: -20px;
+  right: -10px;
   left: auto;
   top: 0px;
   bottom: auto;
-  border: 22px solid;
+  border: 15px solid;
   border-color: #32b9ac transparent transparent transparent;
 }
 
@@ -385,4 +385,8 @@ li .material-icons {
   top: 50%;
   transform: translateY(-50%);
   padding-left: 1.5vh;
+}
+
+.hover {
+  background-color: yellow;
 }

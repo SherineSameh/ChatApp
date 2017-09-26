@@ -1,32 +1,16 @@
 <!-- message.type =0 -> received msg / message.type =1 -> sent message -->
 <div class="col m9 s12 no-padding grey lighten-3 chat-box scroll">
   <div ng-repeat="message in currentChat.messages">
-    <div ng-switch="{{message.type}}">
-      <div ng-switch-when="0">
-        <div class="row" style="margin-top:10px;">
-          <div class="col m12 s12">
-            <div class="talk-bubble tri-right round left-top" style="float: left;">
-              <div class="talktext">
-                <p>{{message.content}}</p>
-              </div>
-            </div>
-            <span class="grey-text lighten-5" style="font-size:80%;">{{message.time}}</span>
-            <br />
-          </div>
-        </div>
-      </div>
-      <div ng-switch-when="1">
-        <div class="row" style="margin-top:10px;">
-          <div class="col m12 s12">
-            <div style="float: right; max-width:90%;">
-              <span class="grey-text lighten-5" style="font-size:80%;">{{message.time}}</span>
-              <div class="talk-bubble tri-left round right-top" style="white-space: normal !important;">
-                <div style="word-wrap: break-word" class="talktext-right">
-                  <p style="word-wrap: break-word">{{message.content}}</p>
-                </div>
-              </div>
+    <div class="row" style="margin-top:5px; margin-bottom:0px;">
+      <div class="col m12 s12">
+        <div ng-class="{'float-right': message.type === 1}" style="max-width: 90%;">
+          <span class="grey-text lighten-5" ng-show="message.type !== currentChat.messages[$index + 1].type && message.type === 1" style="font-size:80%;">{{message.time}}</span>
+          <div ng-class="{'tri-right left-top': message.type !== currentChat.messages[$index -1].type &&   message.type === 0, 'tri-left right-top': message.type !== currentChat.messages[$index -1].type && message.type === 1}" class="talk-bubble round" style="white-space: normal !important;">
+            <div style="word-wrap: break-word" ng-class="{'talktext-right': message.type === 1, 'talktext': message.type === 0}">
+              <p style="word-wrap: break-word">{{message.content}}</p>
             </div>
           </div>
+          <span class="grey-text lighten-5" ng-show="message.type !== currentChat.messages[$index + 1].type && message.type === 0" style="font-size:80%;">{{message.time}}</span>
         </div>
       </div>
     </div>

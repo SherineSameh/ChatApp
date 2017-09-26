@@ -6,7 +6,7 @@
   </ul>
   <ul id="recent-chats" class="no-margin collection nav-container scroll">
     <li ng-repeat="contact in contacts">
-      <a href="#!" ng-click="openChat($index, contact.id);" class="row collection-item contact no-padding">
+      <a href="#!" ng-click="openChat($index, contact.id);" class="row collection-item contact no-padding" ng-class="{hover: $index === currentIndex}">
         <div class="col s12">
           <span class="time grey-text lighten-5">{{contact.messages[contact.messages.length -1].time}}</span>
         </div>
@@ -15,9 +15,11 @@
           <div ng-if="contact.state === 0" class="online-badge" data-badge=""></div>
           <img ng-src="{{contact.img}}" alt="" class="circle" style="width:7vh;">
         </div>
-        <div class="col s7">
+        <div class="col s7" style="padding-left:1.5rem;">
           <span class="title grey-text">{{contact.name}}</span><br />
-          <span class="last-msg grey-text truncate">{{contact.messages[contact.messages.length -1].content}}</span><br />
+          <span class="last-msg grey-text truncate">
+            {{contact.messages[contact.messages.length -1].content}}
+          </span>
         </div>
         <div class="col s2">
           &nbsp;
@@ -46,7 +48,6 @@
         <input id="search" placeholder="search for anything" class="materialize-textarea" ng-model="search" />
       </div>
     </form>
-
     <ul class="no-margin collection search-container scroll">
       <li ng-repeat="contact in contacts | filter :search">
         <a href="" ng-click="openChat($parent.$index, contact.id)" class="row collection-item contact no-padding">
@@ -58,7 +59,7 @@
             <div ng-if="contact.state === 0" class="online-badge" data-badge=""></div>
             <img ng-src="{{contact.img}}" alt="" class="circle" style="width:7vh;">
           </div>
-          <div class="col s9">
+          <div class="col s9" style="padding-left:1.5rem;">
             <span class="title grey-text">{{contact.name}}</span><br />
             <span class="last-msg grey-text truncate">{{contact.messages[contact.messages.length -1].content}}</span><br />
           </div>

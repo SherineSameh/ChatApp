@@ -27,19 +27,18 @@ app.controller('chatCtrl', function($scope, $interval, $http) {
       temp = $scope.contacts[index];
       $scope.contacts.splice(index,1);
       $scope.contacts.unshift(temp);
-      toastContent = $('<div class="row no-padding no-margin">\
-                          <div class="col s12">\
-                            <span class="time lighten-5">'+ temp.messages[temp.messages.length -1].time + '</span>\
-                          </div>\
-                          <div class="col s3">\
+      toastContent = $('<div class="row no-margin">\
+                          <div class="col s3" style="padding-top:1.3rem;">\
+                            <div ng-if="contact.state === 1" class="busy-badge" data-badge=""></div>\
+                            <div ng-if="contact.state === 0" class="online-badge" data-badge=""></div>\
                             <img src="'+ temp.img + '" alt="" class="circle" style="width:7vh;">\
                           </div>\
-                          <div class="col s9">\
+                          <div class="col s9" style="padding-top:1.3rem; padding-left:1rem;">\
                             <span class="title">'+ temp.name + '</span><br />\
                             <span class="last-msg truncate">'+ temp.messages[temp.messages.length -1].content + '</span><br />\
                           </div>\
                         </div>');
-      Materialize.toast(toastContent, 10000);
+      Materialize.toast(toastContent, 5000);
     }
   }, 30000);
   $scope.openChat = function(element, id) {
