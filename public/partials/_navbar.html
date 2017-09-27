@@ -5,8 +5,8 @@
     <li class="tab col s3"><a href="#searchFor"><i class="material-icons">search</i></a></li>
   </ul>
   <ul id="recent-chats" class="no-margin collection nav-container scroll">
-    <li ng-repeat="contact in contacts">
-      <a href="#!" ng-click="openChat($index, contact.id);" class="row collection-item contact no-padding" ng-class="{hover: $index === currentIndex}">
+    <li ng-repeat="contact in contacts" ng-class="{'new-msg': contact.notifications !== 0}" class="clicked">
+      <a href="#!" ng-click="openChat($index, contact.id);" class="row collection-item contact no-padding">
         <div class="col s12">
           <span class="time grey-text lighten-5">{{contact.messages[contact.messages.length -1].time}}</span>
         </div>
@@ -16,8 +16,10 @@
           <img ng-src="{{contact.img}}" alt="" class="circle" style="width:7vh;">
         </div>
         <div class="col s7" style="padding-left:1.5rem;">
-          <span class="title grey-text">{{contact.name}}</span><br />
-          <span class="last-msg grey-text truncate">
+          <span class="title grey-text darken-2">
+            {{contact.name}}
+          </span><br />
+          <span class="last-msg grey-text darken-4 truncate">
             {{contact.messages[contact.messages.length -1].content}}
           </span>
         </div>

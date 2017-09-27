@@ -387,6 +387,18 @@ li .material-icons {
   padding-left: 1.5vh;
 }
 
-.hover {
-  background-color: yellow;
+.clicked a:active{
+  background-color: lavender !important;
+}
+.clicked a:active .title{
+  color: #32b9ac !important
+}
+.new-msg a {
+  background-color: white !important;
+}
+.new-msg .title{
+  color: black !important;
+}
+.new-msg .last-msg {
+  color: #32b9ac !important;
 }

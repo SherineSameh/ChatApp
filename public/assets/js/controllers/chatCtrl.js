@@ -12,6 +12,7 @@ app.controller('chatCtrl', function($scope, $interval, $http) {
     $scope.contacts = data.contacts;
     $scope.currentChat = $scope.contacts[0];
     $scope.currentIndex = 0;
+    $scope.active = false;
   });
   $interval(function() {
     currentTime = new Date();
@@ -23,6 +24,9 @@ app.controller('chatCtrl', function($scope, $interval, $http) {
     index = Math.floor(Math.random() * 14) + 1
     $scope.contacts[index].messages.push(receivedMessage);
     $scope.contacts[index].notifications++;
+    chatbox    = $('#chat-box');
+    height = chatbox[0].scrollHeight;
+    chatbox.scrollTop(height);
     if($scope.contacts[index] !== $scope.currentIndex) {
       temp = $scope.contacts[index];
       $scope.contacts.splice(index,1);
